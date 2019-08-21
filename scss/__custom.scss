@@ -1,0 +1,133 @@
+//custom colors
+$violet: #a47eb9;
+$mygray: #707070;
+$light-green: #85b5c9;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $light-gray;
+}
+
+main {
+  background: white;
+  min-height: 550px !important;
+  border-radius: 27px;
+
+  .left {
+    background: url(../assets/bg.svg) center center;
+    background-size: cover;
+    box-shadow: 0 3px 6px #888888;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    h4 {
+      color: $mygray;
+    }
+
+    .form__login {
+      width: 40%;
+    }
+    input[type="submit"] {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 27px;
+      border: none;
+      cursor: pointer;
+      background: $violet;
+      color: $white;
+      font-weight: bold;
+      box-shadow: 0 3px 6px #888888;
+      transition: 300ms ease-in-out;
+    }
+    input[type="submit"]:hover {
+      transition: 300ms ease-in-out;
+      background: $light-green;
+    }
+    input[type="text"],
+    input[type="password"] {
+      border-radius: 9px;
+      text-align: center;
+    }
+    cite {
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+  .right {
+    box-shadow: 3px 3px 6px #888888;
+    background: url(../assets/pattern2.png) center center;
+    background-size: cover;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+    padding: 1rem;
+    color: white;
+
+    .image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: $white;
+      margin-bottom: 1rem;
+    }
+    .__fix {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 3.5rem;
+    }
+
+    input[type="submit"] {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 27px;
+      border: none;
+      cursor: pointer;
+      background: $white;
+      color: $mygray;
+      font-weight: bold;
+      box-shadow: 0 3px 6px #888888;
+      transition: 300ms ease-in-out;
+    }
+    input[type="submit"]:hover {
+      transition: 300ms ease-in-out;
+      background: $light-green;
+      color: $white;
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 1rem;
+    }
+    .name {
+      text-align: center;
+      p {
+        margin-bottom: 0;
+        line-height: 0;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+.__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
