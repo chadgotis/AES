@@ -4,8 +4,3 @@ $(document).ready(() => {
 });
 
 // animation
-
-anime({
-  targets: "#container",
-  scale: 0.9
-});
